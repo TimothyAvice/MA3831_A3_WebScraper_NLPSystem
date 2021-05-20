@@ -292,10 +292,13 @@ def main():
         writer = csv.writer(myFile)
         writer.writerow(labels)
         for i in tqdm.tqdm(range(len(laptops[0]))):
-            laptop = []
-            for j in range(len(laptops)):
-                laptop.append(laptops[j][i][0])
-            writer.writerow(laptop)
+            try:
+                laptop = []
+                for j in range(len(laptops)):
+                    laptop.append(laptops[j][i][0])
+                writer.writerow(laptop)
+            except:
+                continue
 
 
 main()
