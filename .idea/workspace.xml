@@ -105,7 +105,7 @@
       <updated>1621653710241</updated>
       <workItem from="1621653711593" duration="962000" />
       <workItem from="1621654693815" duration="62000" />
-      <workItem from="1621654759146" duration="8536000" />
+      <workItem from="1621654759146" duration="17111000" />
     </task>
     <servers />
   </component>
@@ -121,32 +121,40 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="225" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1621653949454" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1621685630002">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1621685630002" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1621653940159">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1621653940159" />
-    <state width="914" height="278" key="GridCell.Tab.0.bottom" timestamp="1621663190948">
+    <state width="1877" height="312" key="GridCell.Tab.0.bottom" timestamp="1621685739099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1621663190948" />
-    <state width="914" height="278" key="GridCell.Tab.0.center" timestamp="1621663190948">
+    <state width="1877" height="312" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1621685739099" />
+    <state width="1877" height="312" key="GridCell.Tab.0.center" timestamp="1621685739099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1621663190948" />
-    <state width="914" height="278" key="GridCell.Tab.0.left" timestamp="1621663190948">
+    <state width="1877" height="312" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1621685739099" />
+    <state width="1877" height="312" key="GridCell.Tab.0.left" timestamp="1621685739099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1621663190948" />
-    <state width="914" height="278" key="GridCell.Tab.0.right" timestamp="1621663190948">
+    <state width="1877" height="312" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1621685739099" />
+    <state width="1877" height="312" key="GridCell.Tab.0.right" timestamp="1621685739099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1621663190948" />
+    <state width="1877" height="312" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1621685739099" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1621653868159">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1621653868159" />
+    <state x="1020" y="172" width="840" height="693" key="editAsTableFormatDialogDimension" timestamp="1621684531862">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1020" y="172" width="840" height="693" key="editAsTableFormatDialogDimension/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1621684531862" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MA3831_A3_WebScraper_NLPSystem$WebScraper2.coverage" NAME="WebScraper2 Coverage Results" MODIFIED="1621663190942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MA3831_A3_WebScraper_NLPSystem$WebScraper2.coverage" NAME="WebScraper2 Coverage Results" MODIFIED="1621685739093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

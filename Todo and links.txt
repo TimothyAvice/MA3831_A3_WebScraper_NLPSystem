@@ -1,4 +1,4 @@
-https://www.notebookcheck.net/Reviews.55.0.html?&items_per_page=500&hide_youtube=1&ns_show_num_normal=250&hide_external_reviews=1&introa_search_title=review&tagArray[]=16&typeArray[]=1
+https://www.notebookcheck.net/Reviews.55.0.html?&items_per_page=500&hide_youtube=1&ns_show_num_normal=1&hide_external_reviews=1&introa_search_title=review&tagArray[]=16&typeArray[]=1
 https://www.notebookcheck.net/Reviews.55.0.html?&items_per_page=500&hide_youtube=1&ns_show_num_normal=250&hide_external_reviews=1&page=1&introa_search_title=review&tagArray[]=16&typeArray[]=1
 
 To do:

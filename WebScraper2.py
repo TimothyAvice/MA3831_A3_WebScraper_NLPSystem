@@ -6,11 +6,11 @@ import tqdm
 
 # Chromedriver version 90 required to be installed
 
-
 def main():
-
     # Get all the link for each laptop
-    website_url = 'https://www.notebookcheck.net/Reviews.55.0.html?&items_per_page=500&hide_youtube=1&ns_show_num_normal=1&hide_external_reviews=1&introa_search_title=laptop%20review&tagArray[]=16&typeArray[]=1'
+    website_url = 'https://www.notebookcheck.net/Reviews.55.0.html?&items_per_page=500&hide_youtube=1' \
+                  '&ns_show_num_normal=1&hide_external_reviews=1&introa_search_title=laptop%20review&tagArray[' \
+                  ']=16&typeArray[]=1 '
 
     driver = webdriver.Chrome(executable_path=r"C:\Users\Timothy\Documents\chromedriver.exe")
 
@@ -26,7 +26,9 @@ def main():
     for a in page_soup.findAll("a", {"class": "introa_small introa_review"}, href=True):
         links.append(a['href'])
 
-    website_url = "https://www.notebookcheck.net/Reviews.55.0.html?&items_per_page=500&hide_youtube=1&ns_show_num_normal=1&hide_external_reviews=1&page=1&introa_search_title=laptop%20review&tagArray[]=16&typeArray[]=1"
+    website_url = "https://www.notebookcheck.net/Reviews.55.0.html?&items_per_page=500&hide_youtube=1" \
+                  "&ns_show_num_normal=1&hide_external_reviews=1&page=1&introa_search_title=laptop%20review&tagArray[" \
+                  "]=16&typeArray[]=1 "
 
     driver.get(website_url)
 
@@ -44,7 +46,7 @@ def main():
     laptops = [[], [], [], [], [], [], [], [], [], [], []]
     # Make into for loop
     for i in tqdm.tqdm(range(len(links))):
-    # for i in tqdm.tqdm(range(1)):
+        # for i in tqdm.tqdm(range(10)):
         try:
             driver.get(links[i])
             page_html = driver.page_source
@@ -61,19 +63,40 @@ def main():
             laptop[1][0] = laptop[1][0] + " " + temp
 
             divs = page_soup.find_all("div", {"class": "ttcl_0 csc-default"})
-            counter = 2
+            index = 0
+            heading = ''
             for div in divs[1:]:
                 sub_soup = soup(str(div), 'html.parser')
                 if len(sub_soup.find_all("h2")) > 0:
-                    counter += 1
+                    heading = str(sub_soup.find("h2", text=True).text).capitalize()
+                    if ("Case" in heading) or ("Chassis" in heading):
+                        index = 3
+                    elif ("Connectivity" in heading) or ("Equipment" in heading):
+                        index = 4
+                    elif "Input" in heading:
+                        index = 5
+                    elif "Display" in heading:
+                        index = 6
+                    elif "Performance" in heading:
+                        index = 7
+                    elif "Emissions" in heading:
+                        index = 8
+                    elif "Energy" in heading:
+                        index = 9
+                    elif "Verdict" in heading:
+                        index = 10
 
                 try:
                     sub_temp = sub_soup.find('div', {"class": "csc-textpic-text"}).findAll(text=True)
                     for item in sub_temp:
                         str(item).strip(" ").replace('\n', '')
 
-                    laptop[counter].append(str(" ".join(sub_temp).replace("  ", " ")))
-                    laptop[counter][0].strip('\n', '').replace("  ", " ")
+                    laptop[index].append(str(" ".join(sub_temp).replace("  ", " ")))
+                    laptop[index][0].strip('\n').replace("  ", " ")
+
+                    if laptop[index][0] == '':
+                        laptop[index][0] = heading
+
                 except:
                     continue
 
@@ -86,9 +109,8 @@ def main():
             continue
 
     # Saving to a csv file
-    myFile = open('data2.csv', 'w')
-    with myFile:
-        writer = csv.writer(myFile)
+    with open('output.csv', 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
         writer.writerow(labels)
         for i in tqdm.tqdm(range(len(laptops[0]))):
             try:
@@ -98,5 +120,6 @@ def main():
                 writer.writerow(laptop)
             except:
                 continue
+
 
 main()
