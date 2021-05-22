@@ -1,0 +1,33 @@
+https://www.notebookcheck.net/Reviews.55.0.html?&items_per_page=500&hide_youtube=1&ns_show_num_normal=250&hide_external_reviews=1&introa_search_title=review&tagArray[]=16&typeArray[]=1
+https://www.notebookcheck.net/Reviews.55.0.html?&items_per_page=500&hide_youtube=1&ns_show_num_normal=250&hide_external_reviews=1&page=1&introa_search_title=review&tagArray[]=16&typeArray[]=1
+
+To do:
+1) Get list of all the links from the main page
+	- Acer
+	- Asus
+	- Dell
+	- Huawei
+	- 
+
+2) Go through each laptop and extract textual information
+
+  - Review title
+  - Summary paragraph
+  - Specifications (If possible)
+  - Case info
+  - Connectivity
+	- Overview
+	- List of specifics
+  - Input devices
+	- Keyboard
+	- Touchpad
+  - Display
+  - Performance
+	- Overview
+	- List of specifics
+  - Emissions
+	- List of specifics
+  - Energy management
+	- List of specifics
+  - Verdict (Summary info)
+
