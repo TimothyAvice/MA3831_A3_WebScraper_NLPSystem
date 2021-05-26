@@ -1,0 +1,17 @@
+Web scraper
+- Scrape for reviews of laptops
+    - Extract the review title and all the subsections of the review under relevant headings
+- Scrape just the raw specifications for laptops as well
+    - Organise by laptop name
+    - Extract all numbered specification values
+- Only the reviews will have the nlp run on them but the specification information is available
+    - Can be used by team in other steps to further make a conclusion on the problem
+
+NLP Task 1 - Named entity recognition
+- Extract the brand name from the review titles
+    - Re organise the data so that they are labeled by brand
+
+NLP Task 2 - Sentiment analysis
+- Perform sentiment analysis on each section of the reviews for each laptop
+    - Create an overall sentiment score for each row
+- Can then be used to analyse which laptop brand has the most positive outlook
