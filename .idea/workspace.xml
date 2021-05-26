@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="922d1893-9f17-486c-ace2-a5ad59efbd15" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/NameEntityRecognition.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Structure.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MA3831_A3_WebScraper_NLPSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MA3831_A3_WebScraper_NLPSystem.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="922d1893-9f17-486c-ace2-a5ad59efbd15" name="Default Changelist" comment="NLP Task 1 - Parts of speech tagging&#10;- Created new dataset with the brand and laptop name added in">
+      <change afterPath="$PROJECT_DIR$/sentimentAnalysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tokenizationPOS.py" beforeDir="false" afterPath="$PROJECT_DIR$/tokenizationPOS.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,11 +23,15 @@
   </component>
   <component name="JupyterTrust" id="91df5dfb-7fb8-4eff-94a2-53834494287e" />
   <component name="ProjectId" id="1ssG6mq2o8hWKSq9iDlPyJLpRxK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -113,8 +115,16 @@
       <workItem from="1621653711593" duration="962000" />
       <workItem from="1621654693815" duration="62000" />
       <workItem from="1621654759146" duration="17111000" />
-      <workItem from="1621901179504" duration="12021000" />
+      <workItem from="1621901179504" duration="32264000" />
     </task>
+    <task id="LOCAL-00001" summary="NLP Task 1 - Parts of speech tagging&#10;- Created new dataset with the brand and laptop name added in">
+      <created>1621991503444</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621991503444</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,8 +141,13 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="NLP Task 1 - Parts of speech tagging&#10;- Created new dataset with the brand and laptop name added in" />
+    <option name="LAST_COMMIT_MESSAGE" value="NLP Task 1 - Parts of speech tagging&#10;- Created new dataset with the brand and laptop name added in" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MA3831_A3_WebScraper_NLPSystem$WebScraper2.coverage" NAME="WebScraper2 Coverage Results" MODIFIED="1621685739093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/MA3831_A2_WebScraper_NLPSystem$NameEntityRecognition.coverage" NAME="NameEntityRecognition Coverage Results" MODIFIED="1621990778212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MA3831_A2_WebScraper_NLPSystem$NameEntityRecognition.coverage" NAME="tokenizationPOS Coverage Results" MODIFIED="1622012946157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
