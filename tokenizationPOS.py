@@ -64,13 +64,22 @@ def tokenizeTitles(data):
     return NNP_titles
 
 
+def namedEntityRecognition(data):
+    nlp = en_core_web_sm.load()
+    for title in data['Title']:
+        text = nlp(title)
+        pprint([(X.text, X.label_) for X in text.ents])
+
+
 def main():
     data = pd.read_csv('output.csv')
-    brands = tokenizeTitles(data)
-    data['Brand'] = brands
-    # data['Laptop_name'] = laptop_name
 
-    data.to_csv('outputBrand.csv', index=False)
+    namedEntityRecognition(data)
+    # brands = tokenizeTitles(data)
+    # data['Brand'] = brands
+    # # data['Laptop_name'] = laptop_name
+    #
+    # data.to_csv('outputBrand.csv', index=False)
 
 
 main()
