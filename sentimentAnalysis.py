@@ -12,7 +12,8 @@ def noiseRemoval(data):
     for i in tqdm.tqdm(range(data.shape[0])):
         for j in range(data.iloc[0].shape[0] - 1):
             tokens = word_tokenize(data.iloc[i,j + 1].lower())
-            data.iloc[i, j + 1] = " ".join([word for word in tokens if not word in stop_words])
+            if j != data.iloc[0].shape[0] - 1:
+                data.iloc[i, j + 1] = " ".join([word for word in tokens if not word in stop_words])
 
     data['Intro'] = [re.sub(r'\W', ' ', i) for i in data['Intro']]
     data['Case'] = [re.sub(r'\W', ' ', i) for i in data['Case']]

@@ -1,5 +1,4 @@
 import csv
-import bs4
 from bs4 import BeautifulSoup as soup
 from selenium import webdriver
 import tqdm
@@ -12,7 +11,7 @@ def main():
                   '&ns_show_num_normal=1&hide_external_reviews=1&introa_search_title=laptop%20review&tagArray[' \
                   ']=16&typeArray[]=1 '
 
-    driver = webdriver.Chrome(executable_path=r"C:\Users\Timothy\Documents\chromedriver.exe")
+    driver = webdriver.Chrome()
 
     driver.get(website_url)
 

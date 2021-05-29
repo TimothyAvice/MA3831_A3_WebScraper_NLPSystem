@@ -22,21 +22,6 @@ def main():
     for a in page_soup.findAll("a", {"class":"lp-series-table-row"}, href=True):
         links.append(a['href'])
 
-    # For each laptop it will have the following structure
-    #{"Name": [], "Specifications": {"CPU": [{}], "GPU": [{}], "Display": "",
-    # "HDD/SSD": "", "M.2 Slot": "", "RAM": "", "OS": "",
-    # "Dimensions": "", "Weight": "", "Body Material": "", "Ports and conductivity": "", "Features": ""}}
-
-    # For each CPU
-    # {"Name": "", "Frequency": "", "Cores": "", "Instruction type": "", "TDP": "", "Max Temp": "", "Memory channels": "",
-    # "Released": "", "Architecture": "", "Threads": "", "LL Cache": "", "Lithography": "", "Max GPU Frequency": "",
-    # "Memory Type": "", "Max memory": ""}
-
-    # For each GPU
-    # {"Name": "", "Manufacturing Process": "", "Architecture": "", "Base frequency": "", "Memory Type": "",
-    # "Memory Frequency": "", "Memory bandwidth": "", "Released": "", "Power consumption": "", "Cores": "",
-    # "Maximum frequency": "", "Memory Capacity": "", "Memory bus": ""}
-
     # For each Display
     # Direct text copy
 
