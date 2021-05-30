@@ -22,39 +22,6 @@ def main():
     for a in page_soup.findAll("a", {"class":"lp-series-table-row"}, href=True):
         links.append(a['href'])
 
-    # For each Display
-    # Direct text copy
-
-    # Key:
-    # 0) Name
-    # 1) CPU
-    # 2) GPU
-    # 3) Display
-    # 4) HDD/SSD
-    # 5) RAM
-    # 6) OS
-    # 7) Dimensions
-    # 8) Weight
-    # 9) Body material
-    # 10) M.2 Slot
-    # 11) Misc
-    # 12) USB Type-A
-    # 13) USB Type-C
-    # 14) HDMI
-    # 15) VGA
-    # 16) DVI
-    # 17) Card reader
-    # 18) Lan
-    # 19) Wi-Fi
-    # 20) Audio jack
-    # 21) Web camera
-    # 22) Microphone
-    # 23) Speakers
-    # 24) Optical drive
-    # 25) Security Lock Slot
-    # 26) Fingerprint reader
-    # 27) Backlit keyboard
-    # 28) Bluetooth
     labels = ["Name", "CPU", "GPU", "Display", "HDD/SSD", "RAM", "OS", "Dimensions", "Weight", "Body material",
               "M.2 Slot", "Misc", "USB Type-A", "USB Type-C", "HDMI", "VGA", "DVI", "Card reader", "Ethernet Lan",
               "Wi-Fi", "Audio jack", "Web camera", "Microphone", "Speakers", "Optical drive", "Security lock slot",
@@ -64,7 +31,6 @@ def main():
 
     #Make into for loop
     for i in tqdm.tqdm(range(len(links))):
-    #for i in tqdm.tqdm(range(4)):
         try:
             driver.get(links[i])
             page_html = driver.page_source
