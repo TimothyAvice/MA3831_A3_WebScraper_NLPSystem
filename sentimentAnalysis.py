@@ -11,7 +11,7 @@ def noiseRemoval(data):
     stop_words = set(stopwords.words('english'))
     for i in tqdm.tqdm(range(data.shape[0])):
         for j in range(data.iloc[0].shape[0] - 1):
-            tokens = word_tokenize(data.iloc[i,j + 1].lower())
+            tokens = word_tokenize(data.iloc[i, j + 1].lower())
             if j != data.iloc[0].shape[0] - 1:
                 data.iloc[i, j + 1] = " ".join([word for word in tokens if not word in stop_words])
 
@@ -29,7 +29,6 @@ def noiseRemoval(data):
 
 
 def normalization(data):
-
     lemmatizer = nltk.stem.WordNetLemmatizer()
     for i in tqdm.tqdm(range(data.shape[0])):
         for j in range(data.iloc[0].shape[0] - 1):
@@ -77,5 +76,6 @@ def sentimentAnalysis(data):
 def main():
     data = pd.read_csv('outputBrand.csv')
     noiseRemoval(data)
+
 
 main()
