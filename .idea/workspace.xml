@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="922d1893-9f17-486c-ace2-a5ad59efbd15" name="Default Changelist" comment="Transfered overview word document into a jupyter notebook&#10;&#10;Finished writing the webscraper document for task 2">
-      <change afterPath="$PROJECT_DIR$/DataTableFigure.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebScraperWorking.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/~WRL2219.tmp" afterDir="false" />
+    <list default="true" id="922d1893-9f17-486c-ace2-a5ad59efbd15" name="Default Changelist" comment="Added images &#10;&#10;Added terminal output for testing models in NER">
+      <change afterPath="$PROJECT_DIR$/NERResults.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NLPTasks.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SentimentResults.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputBrandSentimentNoLemmatized.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputBrandSentimentNoPreprocessing.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NamedEntityRecognition.py" beforeDir="false" afterPath="$PROJECT_DIR$/NamedEntityRecognition.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task 3 - NLP Tasks.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Task 3 - NLP Tasks.docx" afterDir="false" />
@@ -196,7 +198,7 @@
       <workItem from="1621653711593" duration="962000" />
       <workItem from="1621654693815" duration="62000" />
       <workItem from="1621654759146" duration="17111000" />
-      <workItem from="1621901179504" duration="79292000" />
+      <workItem from="1621901179504" duration="83985000" />
     </task>
     <task id="LOCAL-00001" summary="NLP Task 1 - Parts of speech tagging&#10;- Created new dataset with the brand and laptop name added in">
       <created>1621991503444</created>
@@ -233,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622262134815</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added images &#10;&#10;Added terminal output for testing models in NER">
+      <created>1622348950321</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1622348950321</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,10 +266,11 @@
     <MESSAGE value="Changed NLP task 1 to use the broken NER&#10;- In final software a custom NER engine that was trained will be used&#10;&#10;Started SentimentAnalysis NLP task" />
     <MESSAGE value="Changed NLP task 1 back to Named entity recognition&#10;- Used stanford NER" />
     <MESSAGE value="Transfered overview word document into a jupyter notebook&#10;&#10;Finished writing the webscraper document for task 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Transfered overview word document into a jupyter notebook&#10;&#10;Finished writing the webscraper document for task 2" />
+    <MESSAGE value="Added images &#10;&#10;Added terminal output for testing models in NER" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added images &#10;&#10;Added terminal output for testing models in NER" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MA3831_A2_WebScraper_NLPSystem$sentimentAnalysis.coverage" NAME="sentimentAnalysis Coverage Results" MODIFIED="1622098833249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MA3831_A2_WebScraper_NLPSystem$sentimentAnalysis.coverage" NAME="sentimentAnalysis Coverage Results" MODIFIED="1622351363126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MA3831_A3_WebScraper_NLPSystem$WebScraper2.coverage" NAME="WebScraper2 Coverage Results" MODIFIED="1621685739093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MA3831_A2_WebScraper_NLPSystem$WebScraper2.coverage" NAME="WebScraper2 Coverage Results" MODIFIED="1622281069420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MA3831_A2_WebScraper_NLPSystem$NameEntityRecognition.coverage" NAME="NamedEntityRecognition Coverage Results" MODIFIED="1622343101974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

@@ -70,7 +70,7 @@ def sentimentAnalysis(data):
     data['Energy management sentiment'] = segments[7]
     data['Verdict sentiment'] = segments[8]
 
-    data.to_csv('outputBrandSentiment.csv', index=False)
+    data.to_csv('outputBrandSentimentNoPreprocessing.csv', index=False)
 
 
 def main():

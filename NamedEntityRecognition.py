@@ -2,7 +2,6 @@
 import os
 
 import en_core_web_sm
-import nltk
 import pandas as pd
 import tqdm
 from nltk.tag import StanfordNERTagger
@@ -73,11 +72,10 @@ def main():
 
     print(brands)
     print(brands2)
-    # brands = tokenizeTitles(data)
-    # data['Brand'] = brands
-    # # data['Laptop_name'] = laptop_name
-    #
-    # data.to_csv('outputBrand.csv', index=False)
+
+    data['Brand'] = brands
+
+    data.to_csv('outputBrand.csv', index=False)
 
 
 main()
